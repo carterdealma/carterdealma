@@ -287,5 +287,18 @@
     "checklistUrl": "https://ebird.org/checklist/S39231229?view=photos",
     "timestamp": "2025-09-13T07:20:36.435102",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "relser1",
+    "name": "Red-legged Seriema",
+    "scientificName": "Cariama cristata",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/88527851/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/relser1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Central and eastern brazil to bolivia, paraguay, and central argentina",
+    "description": "Unmistakable large terrestrial raptorial bird. Sandy-colored overall with very long red legs, a long tail, and tufty crest in front of the eyes.",
+    "imageCreditName": "Stephan Lorenz / Rockjumper Birding Tours",
+    "checklistUrl": "https://ebird.org/checklist/S38318368?view=photos",
+    "timestamp": "2025-09-13T07:28:09.953813",
+    "isBirdOfTheDay": true
   }
 ]
