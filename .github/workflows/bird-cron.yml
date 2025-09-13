@@ -1,0 +1,15 @@
+name: Daily Bird Trigger
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # This is 00:00 Mountain Time (MDT = UTC-6)
+  workflow_dispatch:      # Allow manual trigger from GitHub UI
+
+jobs:
+  ping-backend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Curl the write-new-bird POST endpoint
+        run: |
+          curl --fail -X POST "https://carterma.onrender.com/write-new-bird?token=${{ secrets.DAILY_BIRD_TRIGGER_SECRET }}"

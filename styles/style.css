@@ -1,0 +1,324 @@
+:root {
+    --silver: #BFC0C0; /* Color of text */
+    --anti-flash-white: #EAEBEB; /* Color of text in button and sidebar */
+    --gunmetal: #1b2432; /* Color of container */
+    --rich-black: #151c28; /* Background color */
+    --cadet-gray: #7e95a0; /* Color of unvisited link */
+    --cadet-gray-2: #A1B2BA; /* Color of unvisited hovered link */
+    --cadet-gray-3: #9D9FAA; /* Color of visited link */
+    --glaucous: #6D87B0;  /* Color of hovered button */
+    --lapis-lazuli: #4F6892; /* Color of button */
+    --jet: #2D2F33; /* Color of sidebar background */
+    --outer-space: #43464C; /* Color of current page in sidebar */
+}
+
+@media (max-width: 768px) {
+    .bird-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+body {
+    font-family: 'Manrope';
+    text-align: center;
+    background-color: var(--rich-black);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Will push content to the right when sidebar is expanded */
+    margin-left: 60px;
+    transition: margin-left 0.3s ease;
+}
+
+/** Bird page section */
+
+.container {
+    position: relative;
+    max-width: 900px;
+    padding: 16px;
+    background: var(--gunmetal);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 400;
+    color: var(--silver);
+    margin-bottom: 4px;
+}
+
+#bird_name {
+    font-weight: 600;
+    color: var(--glaucous)
+}
+
+h2 {
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: 200;
+    color: var(--silver);
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 1em;
+    color: var(--silver);
+    line-height: 1.4;
+    margin: 12px 0;
+}
+
+a {
+    color: var(--cadet-gray)
+}
+
+#image_credit a:hover {
+    color: var(--cadet-gray-2);
+}
+
+#image_credit   a:visited {
+    color: var(--cadet-gray-3)
+}
+
+.bird-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px 0;
+    align-items: stretch;
+}
+
+
+.bird-photo-section, .bird-map-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bird-photo,
+.bird-map {
+    width: 100%;
+    max-width: 430px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bird-map {
+    border: none;
+    margin-bottom: 25px;
+}
+
+
+.bird-photo, .bird-map {
+    width: 100%;
+    max-width: 430px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#image_credit {
+    margin-top: 6px;
+    font-size: 0.9em;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.button-with-loader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--lapis-lazuli);
+    color: var(--anti-flash-white);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--glaucous);
+}
+
+button:disabled {
+  opacity: 0.5; /* Make the button appear lighter */
+  cursor: not-allowed; /* Indicate it's not clickable */
+  background-color: var(--rich-black); /* Change background color if desired */
+  color: var(--silver); /* Change text color if desired */
+}
+
+#back_button {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    display: none;
+}
+
+.loader {
+    width: 32px;
+    height: 32px;
+    border: 4px solid var(--glaucous);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 100vh;
+    background-color: var(--jet);
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.sidebar.expanded {
+    width: 200px;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: var(--anti-flash-white);
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: background 0.3s, color 0.2s;
+}
+
+.sidebar-link:hover {
+    background-color: #444;
+}
+
+.sidebar-link .emoji {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.sidebar-link .label {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 0;
+    opacity: 0;
+    transition: max-width 0.3s ease, opacity 0.3s ease;
+}
+
+.sidebar-link.current-page {
+    background-color: var(--outer-space);
+    border-left: 4px solid var(--glaucous);
+}
+
+.sidebar.expanded .sidebar-link .label {
+    max-width: 160px;
+    opacity: 1;
+}
+
+.content {
+    margin-left: 50px; /* matches collapsed sidebar */
+    transition: margin-left 0.3s ease;
+    padding: 20px;
+}
+
+.sidebar.expanded ~ .content {
+    margin-left: 200px; /* matches expanded sidebar */
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  filter: invert();
+}
+
+/** About me section */
+
+#about-me-content {
+    display:flex;
+    width: 100%;
+    margin-top: -120px;
+}
+
+#hi_text {
+    position: relative;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 2em;
+    margin: 0;
+    color: var(--silver);
+    z-index: 1000;
+    transition: left 0.3s ease;
+}
+
+#my_name {
+    position: relative;
+    left: -5px;
+    font-size: 5em;
+    font-weight: 900;
+    color: var(--glaucous);
+    margin: 0;
+    z-index: 1000;
+    transition: left 0.3s ease;
+}
+
+#profile_pic {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes it circular */
+    border: 4px solid var(--glaucous);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.name-column {
+    float: left;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    text-align: left;
+    width: auto;
+}
+
+.picture-column {
+    position: relative;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    text-align: center;
+}
+
+.about-me > div {
+    float: left;
+}
