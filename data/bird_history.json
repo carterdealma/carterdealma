@@ -248,5 +248,18 @@
     "checklistUrl": "https://ebird.org/checklist/S8369226?view=photos",
     "timestamp": "2025-09-13T06:34:07.701357",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "grycro1",
+    "name": "Gray Crow",
+    "scientificName": "Corvus tristis",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/275294881/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/grycro1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "New guinea, including raja ampat islands (off western new guinea), yapen (cenderawasih bay, off northwestern new guinea), and d'entrecasteaux archipelago (off southeastern new guinea)",
+    "description": "A large bird of lowland and foothill forest canopy, often near rivers. Somewhat variable plumage but has a long tail, bare, pink, facial skin and blue eyes.",
+    "imageCreditName": "Phillip Edwards",
+    "checklistUrl": "https://ebird.org/checklist/S65010882?view=photos",
+    "timestamp": "2025-09-13T06:38:15.754887",
+    "isBirdOfTheDay": true
   }
 ]
