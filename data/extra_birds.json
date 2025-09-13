@@ -1,0 +1,67 @@
+[
+  {
+    "speciesCode": "salwar1",
+    "name": "Sakhalin Leaf Warbler",
+    "scientificName": "Phylloscopus borealoides",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/158482481/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/salwar1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Sakhalin, kuril islands, and hokkaido (northern japan)",
+    "description": "Small songbird, virtually identical in plumage to Pale-legged Leaf Warbler, of which it was formerly considered a subspecies. Vertical tail pumping distinguishes this species from most others in its range except Pale-legged.",
+    "imageCreditName": "Craig Brelsford",
+    "checklistUrl": "https://ebird.org/checklist/S39237942?view=photos",
+    "timestamp": "2025-09-13T05:14:45.688124",
+    "isBirdOfTheDay": false
+  },
+  {
+    "speciesCode": "harfra4",
+    "name": "Harwood's Spurfowl",
+    "scientificName": "Pternistis harwoodi",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/609747630/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/harfra4?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Highlands of central ethiopia",
+    "description": "A dark, medium-sized francolin with a large patch of red bare skin around the eyes, and a red bill and legs. The blackish feathers of the back, neck, and underparts have pale fringes.",
+    "imageCreditName": "Mathieu Bally",
+    "checklistUrl": "https://ebird.org/checklist/S147524276?view=photos",
+    "timestamp": "2025-09-13T05:14:46.201173",
+    "isBirdOfTheDay": false
+  },
+  {
+    "speciesCode": "palbab1",
+    "name": "Palawan Babbler",
+    "scientificName": "Malacopteron palawanense",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/395887011/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/palbab1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Southwestern philippines (balabac and palawan)",
+    "description": "A medium-sized bird of lowland forest tangles and bamboo on Palawan and Balabac. Medium-brown above with more rufous on the tail, shoulder, and forecrown.",
+    "imageCreditName": "carlo gomez",
+    "checklistUrl": "https://ebird.org/checklist/S36592195?view=photos",
+    "timestamp": "2025-09-13T05:14:46.810453",
+    "isBirdOfTheDay": false
+  },
+  {
+    "speciesCode": "plueup1",
+    "name": "Plumbeous Euphonia",
+    "scientificName": "Euphonia plumbea",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/625198289/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/plueup1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Southern venezuela to guyana, suriname, and northern amazonian brazil",
+    "description": "A small mosly gray finch with a yellow belly and contrasting pale bluish bill. Rather uncommon and generally restricted to scrub habitats and taller secondary forests on weathered, sandy soils.",
+    "imageCreditName": "Andres Vasquez Noboa",
+    "checklistUrl": "https://ebird.org/checklist/S199217657?view=photos",
+    "timestamp": "2025-09-13T05:14:47.191821",
+    "isBirdOfTheDay": false
+  },
+  {
+    "speciesCode": "pacloo",
+    "name": "Pacific Loon",
+    "scientificName": "Gavia pacifica",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/308026491/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/pacloo?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Coastal eastern siberia and northern north america; winters to japan and southern baja california",
+    "description": "A medium-sized loon, common in western North America and across the Pacific to Japan. Dark overall and relatively short-billed for a loon, with a rounded crown and nape.",
+    "imageCreditName": "Tyler Ficker",
+    "checklistUrl": "https://ebird.org/checklist/S57404256?view=photos",
+    "timestamp": "2025-09-13T05:14:47.698776",
+    "isBirdOfTheDay": false
+  }
+]
