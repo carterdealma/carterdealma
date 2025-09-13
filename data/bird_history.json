@@ -209,5 +209,18 @@
     "checklistUrl": "https://ebird.org/checklist/S65213326?view=photos",
     "timestamp": "2025-09-13T05:59:53.620809",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "grseag1",
+    "name": "Greater Spotted Eagle",
+    "scientificName": "Clanga clanga",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/54344101/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/grseag1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Central eurasia and southern asia; winters to africa, china, and indochina",
+    "description": "Adults are large and quite uniform dark brown eagles with very broad wings and short tails. Single white ",
+    "imageCreditName": "Sanjay Malik",
+    "checklistUrl": "https://ebird.org/checklist/S33227441?view=photos",
+    "timestamp": "2025-09-13T06:02:57.584314",
+    "isBirdOfTheDay": true
   }
 ]
