@@ -45,7 +45,7 @@ let birdOfTheDay = null;
 let extraBirds = [];
 let extraBirdIndex = 0;
 
-fetch('data/bird_history.json')
+fetch(`data/bird_history.json?t=${Date.now()}`)
     .then(response => response.json())
     .then(history => {
         if (!history || history.length === 0) {
@@ -61,7 +61,7 @@ fetch('data/bird_history.json')
     });
 
 // --- Load extra birds for the "new bird" button ---
-fetch('data/extra_birds.json')
+fetch(`data/extra_birds.json?t=${Date.now()}`)
     .then(response => response.json())
     .then(data => {
         extraBirds = data || [];
