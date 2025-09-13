@@ -261,5 +261,18 @@
     "checklistUrl": "https://ebird.org/checklist/S65010882?view=photos",
     "timestamp": "2025-09-13T06:38:15.754887",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "litpar2",
+    "name": "Lilac-tailed Parrotlet",
+    "scientificName": "Touit batavicus",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/177565891/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/litpar2?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Northern venezuela to trinidad and tobago and the guianas",
+    "description": "Small parrot of rainforest regions. Generally uncommon; distinctive black-and green plumage and purple tail render it unmistakable on the rare occasions it is seen well.",
+    "imageCreditName": "Jerome Foster",
+    "checklistUrl": "https://ebird.org/checklist/S39531797?view=photos",
+    "timestamp": "2025-09-13T07:08:33.370883",
+    "isBirdOfTheDay": true
   }
 ]
