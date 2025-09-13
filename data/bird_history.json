@@ -274,5 +274,18 @@
     "checklistUrl": "https://ebird.org/checklist/S39531797?view=photos",
     "timestamp": "2025-09-13T07:08:33.370883",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "inawoo1",
+    "name": "Inambari Woodcreeper",
+    "scientificName": "Lepidocolaptes fatimalimae",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/173332031/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/inawoo1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Western amazonia, south of the amazon: eastern peru southward to bolivia and eastward to brazil west of the rio madeira",
+    "description": "Fairly small woodcreeper with a thin, slightly downcurved bill. Extensive streaking on the undersides but almost no streaking on the head or back; when viewed from the back, appears very plain.",
+    "imageCreditName": "Silvia F\ud83e\udeb6 Linhares",
+    "checklistUrl": "https://ebird.org/checklist/S39231229?view=photos",
+    "timestamp": "2025-09-13T07:20:36.435102",
+    "isBirdOfTheDay": true
   }
 ]
