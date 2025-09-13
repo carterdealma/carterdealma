@@ -222,5 +222,18 @@
     "checklistUrl": "https://ebird.org/checklist/S33227441?view=photos",
     "timestamp": "2025-09-13T06:02:57.584314",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "chwqua1",
+    "name": "Chestnut Wood-Quail",
+    "scientificName": "Odontophorus hyperythrus",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/326173411/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/chwqua1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Western and central andes of colombia",
+    "description": "This chickenlike bird is bright rufous on the face and underparts and brown above. Female similar to male but rufous more restricted to the upper breast with contrasting gray belly.",
+    "imageCreditName": "Pedro Bernal",
+    "checklistUrl": "https://ebird.org/checklist/S76804891?view=photos",
+    "timestamp": "2025-09-13T06:31:32.912508",
+    "isBirdOfTheDay": true
   }
 ]
