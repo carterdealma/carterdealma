@@ -144,5 +144,18 @@
     "checklistUrl": "https://ebird.org/checklist/S14859111?view=photos",
     "timestamp": "2025-09-13T05:14:45.157797",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "cubeme1",
+    "name": "Cuban Emerald",
+    "scientificName": "Riccordia ricordii",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/106845401/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/cubeme1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Cuba including isla de la juventud (isle of pines; south of western cuba), grand bahama, great abaco, and andros",
+    "description": "A pugnacious hummingbird that feeds on flowers and insects and is sometimes found flycatching. Inhabits a broad range of habitats.",
+    "imageCreditName": "Anonymous",
+    "checklistUrl": "https://ebird.org/checklist/S43350561?view=photos",
+    "timestamp": "2025-09-13T05:24:44.635438",
+    "isBirdOfTheDay": true
   }
 ]
