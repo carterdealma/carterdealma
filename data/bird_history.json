@@ -183,5 +183,18 @@
     "checklistUrl": "https://ebird.org/checklist/S63035391?view=photos",
     "timestamp": "2025-09-13T05:51:07.403016",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "ruftre4",
+    "name": "Rusty-flanked Treecreeper",
+    "scientificName": "Certhia nipalensis",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/169476361/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/ruftre4?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Mountains of western nepal to northeastern myanmar, southeastern tibet, and southwestern china",
+    "description": "Well-marked treecreeper with a tiny bill, warm brown upperparts, and a dark brown ear patch on a white face. Warm rusty tones on the sides contrast sharply with a clean white throat and may meld into dark upperparts at a distance.",
+    "imageCreditName": "Peter Hosner",
+    "checklistUrl": "https://ebird.org/checklist/S34314691?view=photos",
+    "timestamp": "2025-09-13T05:58:21.898979",
+    "isBirdOfTheDay": true
   }
 ]
