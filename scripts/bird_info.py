@@ -109,7 +109,7 @@ if __name__ == "__main__":
 
     # --- Generate extra birds ---
     extra_birds = []
-    for _ in range(10):  # generate 10 extras
+    for _ in range(20):  # generate 20 extras
         valid_extra = False
         while not valid_extra:
             bird = get_random_bird()
