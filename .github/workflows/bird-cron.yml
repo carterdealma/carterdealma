@@ -1,15 +1,33 @@
-name: Daily Bird Trigger
+name: Daily Bird Update
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # This is 00:00 Mountain Time (MDT = UTC-6)
-  workflow_dispatch:      # Allow manual trigger from GitHub UI
+    - cron: '0 0 * * *'  # Run daily at midnight UTC
+  workflow_dispatch:       # Allow manual trigger
 
 jobs:
-  ping-backend:
+  generate-bird:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Curl the write-new-bird POST endpoint
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
         run: |
-          curl --fail -X POST "https://carterma.onrender.com/write-new-bird?token=${{ secrets.DAILY_BIRD_TRIGGER_SECRET }}"
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run bird_info.py
+        run: python scripts/bird_info.py
+
+      - name: Commit and push updated data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/bird_history.json data/extra_birds.json
+          git commit -m "Update bird data [skip ci]" || echo "No changes to commit"
+          git push

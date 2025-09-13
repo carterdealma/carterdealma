@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bird of the Day</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="sidebar" id="sidebar">
-        <a href="/" id="about-link" class="sidebar-link">
+        <a href="index.html" id="about-link" class="sidebar-link">
             <img src="icons/about-me-icon.png" class="icon" alt="About Me icon">
-            <span class="label"></span>
+            <span class="label">About Me</span>
         </a>
-        <a href="bird-of-the-day.html" class="sidebar-link">
+        <a href="bird-of-the-day.html" class="sidebar-link active">
             <img src="icons/bird-icon.png" class="icon" alt="Bird icon">
             <span class="label">Bird of the Day</span>
         </a>
@@ -21,7 +21,10 @@
 
     <main class="content">
         <div class="container">
-            <h1><span id="bird_title" class="subtitle" aria-live="polite"></span> <span id="bird_name"></span></h1>
+            <h1>
+                <span id="bird_title" class="subtitle" aria-live="polite"></span>
+                <span id="bird_name"></span>
+            </h1>
             <h2 id="bird_scientific_name"></h2>
             
             <div class="bird-info">
@@ -48,7 +51,8 @@
         </div>
     </main>
 
-    <script src="bird_script.js" defer></script>
-    <script src="sidebar.js" defer></script>
+    <!-- JavaScript -->
+    <script src="scripts/bird_script.js" defer></script>
+    <script src="scripts/sidebar.js" defer></script>
 </body>
 </html>

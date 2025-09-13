@@ -1,80 +1,93 @@
 /**
- * This function updates the bird display with the provided bird data.
- * It updates the bird name, scientific name, photo, range map, description, and image credit information.
- * If the photo URL is empty, it refreshes the bird of the day.
- * @param {*} birdData 
+ * Updates the bird display with the provided bird data.
  */
-function updateBirdDisplay(birdData) 
-{
-    document.getElementById('loader').style.display = 'none'; // Hide the loader
+function updateBirdDisplay(birdData) {
+    // Hide loader
+    document.getElementById('loader').style.display = 'none';
+
+    // Populate fields
     document.getElementById('bird_name').textContent = birdData.name;
     document.getElementById('bird_scientific_name').textContent = birdData.scientificName;
     document.getElementById('bird_photo').src = birdData.photoUrl;
     document.getElementById('bird_map').src = birdData.rangeMapUrl;
     document.getElementById('range_description').textContent = birdData.rangeDescription;
     document.getElementById('bird_description').textContent = birdData.description;
-    // Set the image credit
-    const creditElement = document.getElementById("image_credit")
+
+    // Image credit
+    const creditElement = document.getElementById("image_credit");
     creditElement.textContent = "";
     const textNode = document.createTextNode("Photo by: ");
     creditElement.appendChild(textNode);
-    const link = document.createElement('a')
-    const url = birdData.checklistUrl;
-    const name = birdData.imageCreditName;
-    link.href = url;
-    link.textContent = name;
-    link.target = "_blank"; // Open in new tab
-    link.rel = "noopener noreferrer"; // Security best practice
+    const link = document.createElement('a');
+    link.href = birdData.checklistUrl;
+    link.textContent = birdData.imageCreditName;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
     creditElement.appendChild(link);
     creditElement.style.display = 'inline';
-    // Change bird title and show/hide the back button based on the bird type
+
+    // Bird type title + back button toggle
     if (birdData.isBirdOfTheDay) {
         document.getElementById('bird_title').textContent = "Bird of the Day: ";
-        document.getElementById('back_button').style.display = 'none'; // Hide the back button
-    }
-    else {
+        document.getElementById('back_button').style.display = 'none';
+    } else {
         document.getElementById('bird_title').textContent = "You've spotted the: ";
-        document.getElementById('back_button').style.display = 'block'; // Show the back button
+        document.getElementById('back_button').style.display = 'block';
     }
-    // Enable all buttons
-    document.getElementById('back_button').disabled = false; // Enable the back button
-    document.getElementById('new_bird_button').disabled = false; // Enable the new bird button
+
+    // Enable buttons
+    document.getElementById('back_button').disabled = false;
+    document.getElementById('new_bird_button').disabled = false;
 }
 
-// Fetches the Bird of the Day from the server and updates the display.
-fetch('/bird-of-the-day')
+// --- Fetch Bird of the Day ---
+let birdOfTheDay = null;
+let extraBirds = [];
+let extraBirdIndex = 0;
+
+fetch('data/bird_history.json')
     .then(response => response.json())
-    .then(updateBirdDisplay)
+    .then(history => {
+        if (!history || history.length === 0) {
+            throw new Error("No Bird of the Day found in history.");
+        }
+        birdOfTheDay = history[history.length - 1]; // last entry
+        birdOfTheDay.isBirdOfTheDay = true;
+        updateBirdDisplay(birdOfTheDay);
+    })
+    .catch(err => {
+        console.error(err);
+        document.getElementById('bird_title').textContent = "Error loading Bird of the Day.";
+    });
+
+// --- Load extra birds for the "new bird" button ---
+fetch('data/extra_birds.json')
+    .then(response => response.json())
+    .then(data => {
+        extraBirds = data || [];
+    })
     .catch(console.error);
 
-// Add click handler for the "new bird" button
+// --- Click handler for "new bird" ---
 document.getElementById('new_bird_button').addEventListener('click', () => {
-    document.getElementById('loader').style.display = 'block'; // Show the loader
-    document.getElementById('new_bird_button').disabled = true; // Disable the new bird button to prevent multiple clicks
-    document.getElementById('back_button').disabled = true; // Disable the new bird button to prevent any clicks
-    fetch('/see-new-bird')
-        .then(response => response.json())
-        .then(updateBirdDisplay)
-        .catch(console.error);
+    if (extraBirds.length === 0) return; // no birds loaded yet
+    document.getElementById('loader').style.display = 'block';
+    document.getElementById('new_bird_button').disabled = true;
+    document.getElementById('back_button').disabled = true;
+
+    // Cycle through pre-generated extra birds
+    const bird = extraBirds[extraBirdIndex];
+    bird.isBirdOfTheDay = false;
+    updateBirdDisplay(bird);
+
+    // Move index forward (loop back to start if at the end)
+    extraBirdIndex = (extraBirdIndex + 1) % extraBirds.length;
 });
 
-// Add click handler for the "back" button
+// --- Click handler for "back" ---
 document.getElementById('back_button').addEventListener('click', () => {
-    document.getElementById('back_button').disabled = true; // Disable the back button to prevent multiple clicks
-    fetch('/bird-of-the-day')
-        .then(response => response.json())
-        .then(updateBirdDisplay)
-        .catch(console.error);
+    if (!birdOfTheDay) return;
+    document.getElementById('loader').style.display = 'block';
+    document.getElementById('back_button').disabled = true;
+    updateBirdDisplay(birdOfTheDay);
 });
-
-const eventSource = new EventSource('/bird-updates');
-
-eventSource.onmessage = (event) => {
-    const data = JSON.parse(event.data);
-    if (data.type === 'new_bird') {
-        fetch('/bird-of-the-day')
-            .then(response => response.json())
-            .then(updateBirdDisplay)
-            .catch(console.error);
-    }
-};
