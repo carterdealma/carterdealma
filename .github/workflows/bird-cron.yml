@@ -1,5 +1,8 @@
 name: Daily Bird Update
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: '0 0 * * *'  # Run daily at midnight UTC
@@ -30,4 +33,4 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/bird_history.json data/extra_birds.json
           git commit -m "Update bird data [skip ci]" || echo "No changes to commit"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
