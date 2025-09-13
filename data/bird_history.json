@@ -170,5 +170,18 @@
     "checklistUrl": "https://ebird.org/checklist/S101256247?view=photos",
     "timestamp": "2025-09-13T05:36:56.759058",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "whnlau1",
+    "name": "White-necked Laughingthrush",
+    "scientificName": "Garrulax strepitans",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/224935581/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/whnlau1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Myanmar to southwestern china (southwestern yunnan), western thailand, and northwestern laos",
+    "description": "Brown with a russet crown, black face and throat, and a small white patch on the upper neck. Looks like a darker-headed version of the similar Gray Laughingthrush.",
+    "imageCreditName": "Jens Toettrup",
+    "checklistUrl": "https://ebird.org/checklist/S63035391?view=photos",
+    "timestamp": "2025-09-13T05:51:07.403016",
+    "isBirdOfTheDay": true
   }
 ]
