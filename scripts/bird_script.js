@@ -45,7 +45,7 @@ let birdOfTheDay = null;
 let extraBirds = [];
 let extraBirdIndex = 0;
 
-fetch(`data/bird_history.json}`, { cache: "no-store" })
+fetch(`data/bird_history.json`, { cache: "no-store" })
     .then(response => response.json())
     .then(history => {
         if (!history || history.length === 0) {
@@ -61,7 +61,7 @@ fetch(`data/bird_history.json}`, { cache: "no-store" })
     });
 
 // --- Load extra birds for the "new bird" button ---
-fetch(`data/extra_birds.json}`, { cache: "no-store" })
+fetch(`data/extra_birds.json`, { cache: "no-store" })
     .then(response => response.json())
     .then(data => {
         extraBirds = data || [];
