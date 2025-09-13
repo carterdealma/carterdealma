@@ -157,5 +157,18 @@
     "checklistUrl": "https://ebird.org/checklist/S43350561?view=photos",
     "timestamp": "2025-09-13T05:24:44.635438",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "bkdhor1",
+    "name": "Western Dwarf Hornbill",
+    "scientificName": "Horizocerus hartlaubi",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/608763192/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/bkdhor1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Sierra leone to northern democratic republic of the congo (west of the congo river)",
+    "description": "A small, dark forest hornbill found predominantly in primary forest subcanopy, where it prefers areas with abundant vines. This species is unique in its overall dark coloration and its broad white eyebrow that extends to the back of the head.",
+    "imageCreditName": "Jean-Louis Carlo",
+    "checklistUrl": "https://ebird.org/checklist/S101256247?view=photos",
+    "timestamp": "2025-09-13T05:36:56.759058",
+    "isBirdOfTheDay": true
   }
 ]
