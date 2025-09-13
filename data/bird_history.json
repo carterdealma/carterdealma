@@ -196,5 +196,18 @@
     "checklistUrl": "https://ebird.org/checklist/S34314691?view=photos",
     "timestamp": "2025-09-13T05:58:21.898979",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "stcspi1",
+    "name": "Streak-capped Spinetail",
+    "scientificName": "Cranioleuca hellmayri",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/241298581/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/stcspi1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Santa marta mountains (northeastern colombia)",
+    "description": "Mostly brown arboreal spinetail with a black-streaked rufous crown and rufous wings and tail. Has a narrow white eyebrow, diffuse pale streaks on face, and slightly downcurved bill.",
+    "imageCreditName": "Cory Gregory",
+    "checklistUrl": "https://ebird.org/checklist/S65213326?view=photos",
+    "timestamp": "2025-09-13T05:59:53.620809",
+    "isBirdOfTheDay": true
   }
 ]
