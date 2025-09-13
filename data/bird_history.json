@@ -235,5 +235,18 @@
     "checklistUrl": "https://ebird.org/checklist/S76804891?view=photos",
     "timestamp": "2025-09-13T06:31:32.912508",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "blcwar2",
+    "name": "Black-crested Warbler",
+    "scientificName": "Myiothlypis nigrocristata",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/69927511/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/blcwar2?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Andes of colombia to northern venezuela, ecuador, and northern peru",
+    "description": "Small yellow warbler found in the understory of Andean forest and scrub from around 2,500-3,500m. Olive above and brighter yellow below, with bright yellow eyebrow and black crown.",
+    "imageCreditName": "Ian Davies",
+    "checklistUrl": "https://ebird.org/checklist/S8369226?view=photos",
+    "timestamp": "2025-09-13T06:34:07.701357",
+    "isBirdOfTheDay": true
   }
 ]
