@@ -300,5 +300,18 @@
     "checklistUrl": "https://ebird.org/checklist/S38318368?view=photos",
     "timestamp": "2025-09-13T07:28:09.953813",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "madpra1",
+    "name": "Madagascar Pratincole",
+    "scientificName": "Glareola ocularis",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/192294851/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/madpra1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Madagascar; winters coastal somalia to northern mozambique",
+    "description": "Dark, long-winged, elegant bird that is halfway between a tern and a shorebird in shape. Nests along rocky rivers and coastlines, and sometimes sits in open fields.",
+    "imageCreditName": "Sam Woods/Tropical Birding Tours",
+    "checklistUrl": "https://ebird.org/checklist/S40314287?view=photos",
+    "timestamp": "2025-09-14T07:08:56.213684",
+    "isBirdOfTheDay": true
   }
 ]
