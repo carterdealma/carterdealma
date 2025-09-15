@@ -313,5 +313,18 @@
     "checklistUrl": "https://ebird.org/checklist/S40314287?view=photos",
     "timestamp": "2025-09-14T07:08:56.213684",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "serori1",
+    "name": "Seram Oriole",
+    "scientificName": "Oriolus forsteni",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/274922091/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/serori1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Seram (southern moluccas)",
+    "description": "A dull, entirely olive-brown oriole with a pale collar and a conspicuous dark face. Singles or pairs can be found in forest and forest edge in the lowlands and foothills, being more abundant lower down.",
+    "imageCreditName": "Pam Rasmussen",
+    "checklistUrl": "https://ebird.org/checklist/S24845683?view=photos",
+    "timestamp": "2025-09-15T07:11:15.791260",
+    "isBirdOfTheDay": true
   }
 ]
