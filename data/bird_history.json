@@ -326,5 +326,18 @@
     "checklistUrl": "https://ebird.org/checklist/S24845683?view=photos",
     "timestamp": "2025-09-15T07:11:15.791260",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "cheant2",
+    "name": "Chestnut Antpitta",
+    "scientificName": "Grallaria blakei",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/210538911/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/cheant2?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "East slope of the andes of northern peru (amazonas south of the r\u00edo mara\u00f1\u00f3n, southward to hu\u00e1nuco, and north of the r\u00edo huallaga)",
+    "description": "Plain antpitta restricted to cloud forest along the east slope of the Andes in northern Peru. Mostly chestnut-brown; very similar to Graves\u2019s Antpitta, but lacks a distinct eyering and has a different voice.",
+    "imageCreditName": "Ben Sanders",
+    "checklistUrl": "https://ebird.org/checklist/S56638272?view=photos",
+    "timestamp": "2025-09-16T07:11:11.764396",
+    "isBirdOfTheDay": true
   }
 ]
