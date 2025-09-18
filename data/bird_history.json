@@ -352,5 +352,18 @@
     "checklistUrl": "https://ebird.org/checklist/S13245770?view=photos",
     "timestamp": "2025-09-17T07:10:19.528499",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "whwcoo1",
+    "name": "White-winged Coot",
+    "scientificName": "Fulica leucoptera",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/115453221/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/whwcoo1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Far southeastern brazil to eastern bolivia and southward to tierra del fuego",
+    "description": "Fairly common to uncommon coot, mainly in lowlands. Found on fresh to brackish ponds and lakes and wetlands with open water.",
+    "imageCreditName": "Julio Recordon",
+    "checklistUrl": "https://ebird.org/checklist/S47281748?view=photos",
+    "timestamp": "2025-09-18T07:10:31.642346",
+    "isBirdOfTheDay": true
   }
 ]
