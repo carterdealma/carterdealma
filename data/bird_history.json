@@ -365,5 +365,18 @@
     "checklistUrl": "https://ebird.org/checklist/S47281748?view=photos",
     "timestamp": "2025-09-18T07:10:31.642346",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "tabsee1",
+    "name": "Tawny-bellied Seedeater",
+    "scientificName": "Sporophila hypoxantha",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/181050701/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/tabsee1?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Bolivia to paraguay, southern brazil and northern argentina",
+    "description": "Small finchlike species with a short and stubby bill. Males are gray above and tawny below with a tawny rump.",
+    "imageCreditName": "Luiz Matos",
+    "checklistUrl": "https://ebird.org/checklist/S42668227?view=photos",
+    "timestamp": "2025-09-19T07:10:46.341776",
+    "isBirdOfTheDay": true
   }
 ]
