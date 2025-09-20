@@ -378,5 +378,18 @@
     "checklistUrl": "https://ebird.org/checklist/S42668227?view=photos",
     "timestamp": "2025-09-19T07:10:46.341776",
     "isBirdOfTheDay": true
+  },
+  {
+    "speciesCode": "orbsun2",
+    "name": "Orange-breasted Sunbird",
+    "scientificName": "Anthobaphes violacea",
+    "photoUrl": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/216719431/2400",
+    "rangeMapUrl": "https://ebird.org/embedmap/orbsun2?scrollwheel=true&draggable=true&mapType=terrain",
+    "rangeDescription": "Heathlands and protea shrubs of southwestern cape province (south africa)",
+    "description": "The male is a stunning sunbird with a fiery-orange belly and an iridescent purple breast band and green head. The female and juvenile are dull olive with slightly paler underparts.",
+    "imageCreditName": "Yeray Seminario",
+    "checklistUrl": "https://ebird.org/checklist/S40855949?view=photos",
+    "timestamp": "2025-09-20T07:09:05.193629",
+    "isBirdOfTheDay": true
   }
 ]
